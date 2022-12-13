@@ -331,13 +331,12 @@ h2 {
    transition: 0.4s ease-out;
 }
 
-.hover-card:hover:before,
-.hover-card:hover > div {
+.hover-card:focus > div,
+.hover-card:hover > div{
    opacity: 1;
 }
 
-.hover-card:before {
-   content: "";
+.hover-darknes {
    position: absolute;
    top: 0;
    left: 0;
@@ -359,7 +358,7 @@ h2 {
    left: 0;
 }
 
-.hover-card > div {
+.hover-card > img~div {
    padding: 30px;
    position: relative;
    z-index: 3;
